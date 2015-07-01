@@ -23,6 +23,7 @@ class ControllerPaymentSslcommerz extends Controller {
 		$transaction_id = strtoupper( substr( $sslcommerz_username, 0, 3 ) ) . '-' . $this->session->data['order_id'];
 
 		$data['action'] = 'https://www.sslcommerz.com.bd/gwprocess/';
+		$data['testbox'] = false;
 		if($testbox == 1) {
 			$data['action'] = 'https://www.sslcommerz.com.bd/gwprocess/testbox/';
 			$data['testbox'] = true;
