@@ -32,5 +32,6 @@ It is recommended but not necessary to use SSL certificate on your website to re
 ## Changelog
 **0.2**
 * Implemented the payment processing
+
 **0.1**
 * Implemented the Admin area for the plugin
