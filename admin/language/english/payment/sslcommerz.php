@@ -8,7 +8,7 @@ $_['text_success']					 = 'Success: You have modified SSLCommerz account details
 $_['text_edit']                      = 'Edit SSLCommerz details';
 $_['text_sslcommerz']				 = '<a target="_BLANK" href="http://www.goodkoding.com/sslcommerz"><img src="view/image/payment/sslcommerz.png" alt="SSLCommerz Payment Gateway" title="SSLCommerz Payment Gateway" style="border: 1px solid #EEEEEE;" /></a>';
 
-$_['text_support']				     = 'This plugin is developed and maintained by <a href="_BLANK" href="http://www.goodkoding.com/">GoodKoding</a>. Learn more detail about SSLCommerz and get support about the plugin <a target="_BLANK" href="http://www.goodkoding.com/sslcommerz">here</a>.';
+$_['text_support']				     = 'This plugin is developed and maintained by <a target="_BLANK" href="http://www.goodkoding.com/">GoodKoding</a>. Learn more detail about SSLCommerz and get support about the plugin <a target="_BLANK" href="http://www.goodkoding.com/sslcommerz">here</a>.';
 
 // Entry
 $_['text_entry_username']			 = 'SSLCommerz Username';

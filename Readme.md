@@ -5,7 +5,6 @@ This payment module enables the feature to integrate [SSLCommerz](https://sslcom
 
 * Integrate SSLCommerz payment gateway
 * Ability to use both test mode and live mode
-* Email notification upon successful payment
 
 ## Installation
 1. Upload the files inside "gk_oc_sslcommerz" directory to your OpenCart website root.
