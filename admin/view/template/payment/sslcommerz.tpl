@@ -99,10 +99,10 @@
 							       for="entry-geo-zone"><?php echo $text_entry_geo_zone; ?></label>
 
 							<div class="col-sm-10">
-								<select name="sslcommerz_geo_zone_id" id="entry-geo-zone" class="form-control">
+								<select name="sslcommerz_geo_zone" id="entry-geo-zone" class="form-control">
 									<option value="0"><?php echo $text_all_zones; ?></option>
 									<?php foreach ( $geo_zones as $geo_zone ) { ?>
-										<?php if ( $geo_zone['geo_zone_id'] == $sslcommerz_geo_zone_id ) { ?>
+										<?php if ( $geo_zone['geo_zone_id'] == $sslcommerz_geo_zone ) { ?>
 											<option value="<?php echo $geo_zone['geo_zone_id']; ?>"
 											        selected="selected"><?php echo $geo_zone['name']; ?></option>
 										<?php } else { ?>
