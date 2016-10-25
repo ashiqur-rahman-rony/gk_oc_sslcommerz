@@ -6,9 +6,9 @@
  * @url http://goodkoding.com
  * @author_url http://ghumkumar.com
  **/
-class ModelPaymentSslcommerz extends Model {
+class ModelExtensionPaymentSslcommerz extends Model {
 	public function getMethod($address, $total) {
-		$this->load->language('payment/sslcommerz');
+		$this->load->language('extension/payment/sslcommerz');
 
 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone WHERE geo_zone_id = '" . (int)$this->config->get('sslcommerz_geo_zone_id') . "' AND country_id = '" . (int)$address['country_id'] . "' AND (zone_id = '" . (int)$address['zone_id'] . "' OR zone_id = '0')");
 
@@ -26,7 +26,7 @@ class ModelPaymentSslcommerz extends Model {
 			'BDT'
 		);
 
-		if (!in_array(strtoupper($this->currency->getCode()), $currencies)) {
+		if (!in_array(strtoupper($this->session->data['currency']), $currencies)) {
 			$status = false;
 		}
 
@@ -40,7 +40,7 @@ class ModelPaymentSslcommerz extends Model {
 				'sort_order' => $this->config->get('sslcommerz_sort_order')
 			);
 		}
-
+		
 		return $method_data;
 	}
 }

@@ -6,9 +6,9 @@
  * @url http://goodkoding.com
  * @author_url http://ghumkumar.com
  **/
-class ControllerPaymentSslcommerz extends Controller {
+class ControllerExtensionPaymentSslcommerz extends Controller {
 	public function index() {
-		$this->language->load('payment/sslcommerz');
+		$this->language->load('extension/payment/sslcommerz');
 		$data['button_confirm'] = $this->language->get('button_confirm');
 		$data['text_testbox'] = $this->language->get('text_testbox');
 		$data['text_currency_error'] = $this->language->get('text_currency_error');
@@ -60,11 +60,7 @@ class ControllerPaymentSslcommerz extends Controller {
 		$data['sslcommerz_fail_url'] = $this->url->link('checkout/checkout', '', 'SSL');
 		$data['sslcommerz_cancel_url'] = $this->url->link('checkout/checkout', '', 'SSL');
 
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/sslcommerz.tpl')) {
-			return $this->load->view($this->config->get('config_template') . '/template/payment/sslcommerz.tpl', $data);
-		} else {
-			return $this->load->view('default/template/payment/sslcommerz.tpl', $data);
-		}
+		return $this->load->view('extension/payment/sslcommerz.tpl', $data);
 	}
 
 	public function callback() {

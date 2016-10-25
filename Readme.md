@@ -1,5 +1,5 @@
 # SSLCommerz Payment Gateway
-This payment module enables the feature to integrate [SSLCommerz](https://sslcommerz.com.bd) payment gateway to OpenCart 2.0.1.1 or higher.
+This payment module enables the feature to integrate [SSLCommerz](https://sslcommerz.com.bd) payment gateway to OpenCart 2.3.0.2 or higher.
 
 ## Features
 
@@ -29,6 +29,9 @@ SSLCommerz only process BDT (Bangladesh Taka) transactions.
 It is recommended but not necessary to use SSL certificate on your website to receive payment. None of the card information will be collected or stored on your website. Customer (payee) will provide their sensitive information (card number, security code etc.) only on the bank's portal.
 
 ## Changelog
+**0.3**
+* Implemented support for OpenCart v 2.3.0.2
+
 **0.2**
 * Implemented the payment processing
 
